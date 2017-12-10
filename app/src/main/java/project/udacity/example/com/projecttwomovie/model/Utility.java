@@ -5,7 +5,7 @@ import android.database.Cursor;
 
 import project.udacity.example.com.projecttwomovie.data.MovieContract;
 
-@SuppressWarnings("ConstantConditions")
+
 public class Utility {
 
     public static int isFavorited(Context context, int id) {

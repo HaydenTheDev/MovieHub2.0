@@ -88,6 +88,10 @@ public class DetailActivityFragment extends Fragment {
             inflater.inflate(R.menu.menu_fragment_detail, menu);
 
             final MenuItem action_favorite = menu.findItem(R.id.action_favorite);
+            action_favorite.setIcon(Utility.isFavorited(getActivity(), mMovie.getId()) == 1 ?
+                    R.drawable.ic_star_black_24dp :
+                    R.drawable.ic_star_off);
+
             new AsyncTask<Void, Void, Integer>() {
                 @Override
                 protected Integer doInBackground(Void... params) {
@@ -97,7 +101,7 @@ public class DetailActivityFragment extends Fragment {
                 protected void onPostExecute(Integer isFavorited) {
                     action_favorite.setIcon(isFavorited == 1 ?
                             R.drawable.ic_star_black_24dp :
-                            R.drawable.ic_star_black_24dp);
+                            R.drawable.ic_star_off);
                 }
             }.execute();
         }
@@ -129,6 +133,7 @@ public class DetailActivityFragment extends Fragment {
                                                 new String[]{Integer.toString(mMovie.getId())}
                                         );
                                     }
+
 
                                     @Override
                                     protected void onPostExecute(Integer rowsDeleted) {

@@ -16,8 +16,8 @@
         android:layout_height="match_parent"
         android:textSize="@dimen/text_size"
         android:padding="5dp"
-        android:gravity="bottom|left"
-        android:textColor="@android:color/white"
+        android:gravity="bottom|start"
+        android:textColor="#ffffff"
         android:textStyle="bold" />
 
 </FrameLayout>

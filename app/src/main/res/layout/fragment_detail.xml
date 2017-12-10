@@ -25,11 +25,12 @@
                 android:id="@+id/detail_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="22sp"
-                android:padding="5dp"
+                android:textSize="24sp"
+                android:padding="4dp"
+                android:fontFamily="sans-serif-condensed"
                 android:layout_alignParentBottom="true"
-                android:textColor="@android:color/white"
-                android:background="#80000000" />
+                android:textColor="#ffffff"
+                android:background="#000000" />
 
         </RelativeLayout>
 
@@ -37,7 +38,7 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp">
+            android:padding="8dp">
 
             <TextView
                 android:id="@+id/detail_overview"
@@ -48,32 +49,34 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="18dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="10dp">
+                    android:padding="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:text="@string/details"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-condensed"/>
     
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_marginTop="20dp">
+                        android:layout_marginTop="18dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/release_date"
                             android:textStyle="bold"
+                            android:fontFamily="sans-serif-condensed"
                             android:textSize="@dimen/text_size" />
 
                         <View
@@ -84,7 +87,8 @@
                         <TextView
                             android:id="@+id/detail_date"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" />
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"/>
 
                     </LinearLayout>
 
@@ -92,7 +96,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_marginTop="10dp">
+                        android:layout_marginTop="8dp">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -122,7 +126,7 @@
                 android:id="@+id/detail_trailers_cardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="18dp"
                 android:visibility="gone">
 
                 <LinearLayout
@@ -134,14 +138,15 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
+                        android:textSize="22sp"
+                        android:fontFamily="sans-serif-condensed"
                         android:text="@string/trailers"
                         android:textStyle="bold" />
 
                     <HorizontalScrollView
                         android:layout_width="match_parent"
                         android:layout_height="160dp"
-                        android:layout_marginTop="20dp">
+                        android:layout_marginTop="18dp">
 
                         <com.linearlistview.LinearListView
                             android:id="@+id/detail_trailers"
@@ -161,19 +166,20 @@
                 android:id="@+id/detail_reviews_cardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="18dp"
                 android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="10dp">
+                    android:padding="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20sp"
+                        android:textSize="22sp"
+                        android:fontFamily="sans-serif-condensed"
                         android:text="@string/reviews"
                         android:textStyle="bold" />
 
