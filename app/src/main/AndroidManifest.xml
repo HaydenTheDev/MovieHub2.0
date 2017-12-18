@@ -20,11 +20,8 @@
         </activity>
         <activity
             android:name=".model.DetailActivity"
-            android:label="@string/title_activity_detail"
-            android:parentActivityName=".model.MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="project.udacity.example.com.projecttwomovie.model.MainActivity" />
+            android:label="@string/title_activity_detail">
+
         </activity>
         <provider
             android:authorities="@string/content_authority"
